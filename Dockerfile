@@ -1,4 +1,4 @@
-FROM node:onbuild
+FROM node:latest
 
 MAINTAINER Dan Baker, dan@wk1.net
 
