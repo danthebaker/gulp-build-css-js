@@ -15,6 +15,10 @@ RUN npm install path --save-dev
 RUN npm install gulp-watch --save-dev
 RUN npm install less-plugin-clean-css --save-dev
 RUN npm install gulp-pleeease --save-dev
+RUN npm install gulp-more-css --save-dev
+RUN npm install gulp-sftp --save-dev
+RUN npm install gulp-changed --save-dev
+
 RUN apt-get install libfontconfig -y
 
 WORKDIR /data/
