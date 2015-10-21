@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs
+FROM node:onbuild
 
 MAINTAINER Dan Baker, dan@wk1.net
 
