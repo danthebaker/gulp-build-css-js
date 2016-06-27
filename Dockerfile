@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:0.12.14-wheezy
 
 MAINTAINER Dan Baker, dan@wk1.net
 
@@ -18,9 +18,14 @@ RUN npm install gulp-pleeease --save-dev
 RUN npm install gulp-more-css --save-dev
 RUN npm install gulp-sftp --save-dev
 RUN npm install gulp-changed --save-dev
+RUN npm install gulp-print --save-dev
+RUN npm install gulp-cached --save-dev
 
 RUN apt-get install libfontconfig -y
 
 WORKDIR /data/
 
-CMD ["bash"]
+ADD run.sh /run.sh
+
+ENTRYPOINT ["bash", "/run.sh"]
+CMD []

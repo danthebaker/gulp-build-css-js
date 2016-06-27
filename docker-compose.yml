@@ -1,0 +1,6 @@
+build-server:
+  build: .
+  volumes:
+    - /Users/dan/Git/xaracom-website/:/data/tmp/
+    - ~/.ssh/:/.ssh/ gulp-build-css-js
+  container_name: gulp-build-css-js
