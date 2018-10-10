@@ -1,4 +1,4 @@
-FROM node:0.12.14-wheezy
+FROM node:latest
 
 MAINTAINER Dan Baker, dan@wk1.net
 
